@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KEN ANGGA PRADITYA - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .typed-text::after {
+      content: '|';
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .fade-in.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 font-sans transition-colors duration-300">
+
+  <!-- Header -->
+  <header class="bg-indigo-600 dark:bg-indigo-800 text-white sticky top-0 z-50 shadow-md py-6 px-4 sm:px-8">
+    <div class="flex flex-col sm:flex-row items-center justify-between">
+      <div class="flex items-center gap-4">
+       
+        <div>
+          <h1 class="text-2xl font-bold">KEN ANGGA PRADITYA</h1>
+          <p class="typed-text text-sm" id="typed"></p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 mt-4 sm:mt-0">
+        <a href="https://github.com/Ken72185" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="w-6 h-6" alt="GitHub" /></a>
+        <a href="https://www.linkedin.com/in/username" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" class="w-6 h-6" alt="LinkedIn" /></a>
+        <a href="mailto:kenangga.ken@kamu.com"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" class="w-6 h-6" alt="Email" /></a>
+        <a href="https://instagram.com/kenanggaprditya     " target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="w-6 h-6" alt="Instagram" /></a>
+        <a href="https://tiktok.com/@kenngapr" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046122.png" class="w-6 h-6" alt="TikTok" /></a>
+        <button onclick="toggleDarkMode()" class="ml-4 bg-white dark:bg-gray-700 text-gray-900 dark:text-white px-2 py-1 rounded shadow">🌓</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Tentang -->
+  <section class="max-w-3xl mx-auto px-4 py-10 fade-in">
+    <h2 class="text-2xl font-bold mb-4 text-indigo-700 dark:text-indigo-400">Tentang Saya</h2>
+    <p>Saya adalah pengembang web yang berfokus pada frontend, backend, UI/UX modern. Menggunakan HTML, Tailwind, dan JavaScript untuk menciptakan pengalaman digital yang menarik dan responsif.</p>
+  </section>
+
+  <section class="max-w-3xl mx-auto px-4 py-10 fade-in">
+    <h2 class="text-2xl font-bold mb-4 text-indigo-700 dark:text-indigo-400">Halo, saya ken</h2>
+    <p>Saya adalah seorang pengembang web yang berfokus pada desain antarmuka, frontend, dan integrasi backend. Saya senang membuat website modern dan responsif.</p>
+  </section>
+
+  <!-- Keterampilan -->
+  <section class="max-w-5xl mx-auto px-4 py-10 fade-in">
+    <h2 class="text-2xl font-bold mb-4 text-indigo-700 dark:text-indigo-400">Keterampilan</h2>
+    <div class="grid sm:grid-cols-3 gap-6">
+      <div class="bg-white dark:bg-gray-800 rounded shadow hover:shadow-xl transition p-4 text-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/2721/2721296.png" class="w-16 mx-auto mb-2" alt="UI Designer">
+        <h3 class="font-bold">UI Designer</h3>
+      </div>
+      <div class="bg-white dark:bg-gray-800 rounded shadow hover:shadow-xl transition p-4 text-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/919/919827.png" class="w-16 mx-auto mb-2" alt="Frontend">
+        <h3 class="font-bold">Frontend Developer</h3>
+      </div>
+      <div class="bg-white dark:bg-gray-800 rounded shadow hover:shadow-xl transition p-4 text-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/919/919836.png" class="w-16 mx-auto mb-2" alt="Backend">
+        <h3 class="font-bold">Backend Developer</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimoni -->
+  <section class="max-w-4xl mx-auto px-4 py-10 fade-in">
+    <h2 class="text-2xl font-bold mb-4 text-indigo-700 dark:text-indigo-400">Testimoni</h2>
+    <div class="bg-white dark:bg-gray-800 rounded shadow p-4">
+      <p class="italic">"Kualitas kerja KEN luar biasa, sangat profesional dan komunikatif."</p>
+      <p class="text-right mt-2 font-semibold">– Client A</p>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section class="max-w-4xl mx-auto px-4 py-10 fade-in">
+    <h2 class="text-2xl font-bold mb-4 text-indigo-700 dark:text-indigo-400">Blog Terbaru</h2>
+    <div class="bg-white dark:bg-gray-800 rounded shadow p-4">
+      <h3 class="font-semibold text-lg mb-2">Tips UI/UX Untuk Web Modern</h3>
+      <p>Dalam blog ini saya membahas prinsip dasar UI/UX dan bagaimana menerapkannya di proyek nyata...</p>
+    </div>
+  </section>
+
+  <!-- CV -->
+  <section class="text-center py-10 fade-in">
+    <a href="/cv-kenangga.pdf" download class="bg-indigo-600 text-white px-6 py-3 rounded shadow hover:bg-indigo-700 transition">
+      Download CV
+    </a>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="max-w-3xl mx-auto p-6 fade-in">
+    <h2 class="text-2xl font-semibold mb-4 text-indigo-700 dark:text-indigo-400">Kontak</h2>
+    <p>Email: <a href="mailto:kenangga.ken@gmail.com" class="text-blue-400 underline">kenangga.ken@gmail.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/6289683806363" class="text-blue-400 underline" target="_blank">6289683806363</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-600 dark:text-gray-400 py-6">
+    &copy; 2025 KEN ANGGA PRADITYA. Dibuat dengan ❤️ dan TailwindCSS.
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    const typedText = ['Web Developer', 'UI Designer', 'Freelancer'];
+    let i = 0, j = 0, currentText = '', isDeleting = false;
+    function type() {
+      const element = document.getElementById('typed');
+      if (i < typedText.length) {
+        if (!isDeleting && j <= typedText[i].length) {
+          currentText = typedText[i].substring(0, j++);
+        } else if (isDeleting && j >= 0) {
+          currentText = typedText[i].substring(0, j--);
+        }
+        element.textContent = currentText;
+        if (!isDeleting && j === typedText[i].length) {
+          isDeleting = true;
+          setTimeout(type, 1000);
+        } else if (isDeleting && j === 0) {
+          isDeleting = false;
+          i = (i + 1) % typedText.length;
+          setTimeout(type, 300);
+        } else {
+          setTimeout(type, isDeleting ? 50 : 100);
+        }
+      }
+    }
+    type();
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Dark mode toggle
+    function toggleDarkMode() {
+      document.documentElement.classList.toggle('dark');
+    }
+  </script>
+</body>
+</html>
